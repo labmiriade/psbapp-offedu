@@ -1,0 +1,72 @@
+{
+  "mappings": {
+    "properties": {
+      "placeId": {
+        "type": "text"
+      },
+      "istatCode": {
+        "type": "keyword"
+      },
+      "category": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "type": {
+        "type": "text"
+      },
+      "name": {
+        "type": "text"
+      },
+      "code": {
+        "type": "text"
+      },
+      "educationalOffer": {
+        "type": "text"
+      },
+      "streetName": {
+        "type": "text"
+      },
+      "streetNumber": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "city": {
+        "type": "text"
+      },
+      "province": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "website": {
+        "type": "text"
+      },
+      "phone": {
+        "type": "keyword"
+      },
+      "emailAddress": {
+        "type": "keyword"
+      },
+      "location": {
+        "type": "geo_point"
+      },
+      "address": {
+        "type": "text"
+      },
+      "searchable": {
+        "type": "boolean"
+      }
+    }
+  }
+}
